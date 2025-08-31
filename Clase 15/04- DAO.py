@@ -7,7 +7,7 @@ class EstudianteDAO:
         self.conn = mysql.connector.connect(
             host=host,
             user=user,
-            password=password,
+            password=P21911266q!,
             database=database
         )
 

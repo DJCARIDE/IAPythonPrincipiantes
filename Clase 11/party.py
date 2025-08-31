@@ -12,3 +12,6 @@ an = PartyAnimal()
 an.party()
 an.party()
 an.party()
+#print(type(an))
+#print(dir(an))
+
