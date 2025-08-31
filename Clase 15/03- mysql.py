@@ -1,4 +1,4 @@
-import mysql.connector
+venv/scripts/activateimport mysql.connector
 
 # 1. Conexión inicial sin base de datos para crearla si no existe
 try:
