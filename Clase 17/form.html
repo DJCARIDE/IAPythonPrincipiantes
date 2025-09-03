@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario con JavaScript</title>
+    <style>
+        body { font-family: sans-serif; max-width: 400px; margin: 50px auto; }
+        input { width: 100%; padding: 8px; margin-bottom: 10px; }
+        button { padding: 10px 15px; }
+        #resultado { margin-top: 20px; background-color: #eef; padding: 15px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+
+    <h1>Formulario de Contacto (con JS)</h1>
+
+    <form id="miFormulario" action="procesa_formulario.php" method="post">
+    <!-- <form id="miFormulario">     -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="usuario_nombre" required>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="usuario_email" required>
+
+        <button type="submit">Mostrar Datos</button>
+    </form>
+
+    <div id="resultado" style="display:none;">
+        <h2>Datos Recibidos:</h2>
+    </div>
+
+    <!-- <script>
+        // 1. Seleccionamos el formulario
+        const form = document.getElementById('miFormulario');
+
+        // 2. Añadimos un "escuchador" para el evento 'submit'
+        form.addEventListener('submit', function(event) {
+            // 3. Prevenimos el comportamiento por defecto del formulario (que es recargar la página)
+            event.preventDefault();
+
+            // 4. Creamos un objeto FormData para capturar los datos fácilmente
+            const formData = new FormData(form);
+            const nombre = formData.get('usuario_nombre');
+            const email = formData.get('usuario_email');
+
+            // 5. Mostramos los datos en el div 'resultado'
+            const resultadoDiv = document.getElementById('resultado');
+            resultadoDiv.innerHTML = `
+                <h2>Datos Recibidos:</h2>
+                <ul>
+                    <li><strong>Nombre:</strong> ${nombre}</li>
+                    <li><strong>Email:</strong> ${email}</li>
+                </ul>
+            `;
+            resultadoDiv.style.display = 'block'; // Hacemos visible el div
+        });
+    </script> -->
+
+</body>
+</html>
