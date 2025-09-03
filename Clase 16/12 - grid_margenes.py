@@ -29,9 +29,9 @@ boton2.grid(row=0, column=1, sticky=tk.SE, ipadx= 20, ipady=20)
 boton3.grid(row=0, column=2, sticky=tk.NW)
 
 # Publicar de manera vertical
-# boton1.grid(row=0, column=0)
-# boton2.grid(row=1, column=0)
-# boton3.grid(row=2, column=0)
+boton1.grid(row=0, column=0)
+boton2.grid(row=1, column=0)
+boton3.grid(row=2, column=0)
 
 # Publicar en diagonal
 # boton1.grid(row=0, column=0)

@@ -18,7 +18,7 @@ def validar_login():
 
 def abrir_ventana_principal():
     ventana_principal = tk.Tk()
-    ventana_principal.title("Ventana Principal")
+    ventana_principal.title("Ventana Principal de diego")
     ventana_principal.geometry("800x600")
 
     ttk.Label(ventana_principal, text="Bienvenido al sistema", font=("Arial", 14)).pack(pady=20)

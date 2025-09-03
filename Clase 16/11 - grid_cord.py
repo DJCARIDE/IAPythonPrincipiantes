@@ -13,18 +13,18 @@ boton2 = ttk.Button(ventana, text='Boton2')
 boton3 = ttk.Button(ventana, text='Boton3')
 
 # Configurar el grid
-# ventana.columnconfigure(0, weight=1)
-# ventana.columnconfigure(1, weight=1)
-# ventana.columnconfigure(2, weight=1)
+ventana.columnconfigure(0, weight=1)
+ventana.columnconfigure(1, weight=1)
+ventana.columnconfigure(2, weight=1)
 
-# ventana.rowconfigure(0, weight=1)
-# ventana.rowconfigure(1, weight=1)
-# ventana.rowconfigure(2, weight=1)
+ventana.rowconfigure(0, weight=1)
+ventana.rowconfigure(1, weight=1)
+ventana.rowconfigure(2, weight=1)
 
 # Publicando de manera horizontal
-# boton1.grid(row=0, column=0, sticky=tk.NSEW)
-# boton2.grid(row=0, column=1, sticky=tk.SE)
-# boton3.grid(row=0, column=2, sticky=tk.NW)
+boton1.grid(row=0, column=0, sticky=tk.NSEW)
+boton2.grid(row=0, column=1, sticky=tk.SE)
+boton3.grid(row=0, column=2, sticky=tk.NW)
 
 # Publicar de manera vertical
 # boton1.grid(row=0, column=0)
