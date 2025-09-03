@@ -5,7 +5,7 @@ class Coche:
         self.modelo = modelo
 
     def obtener_informacion(self):
-        print(f"Coche: {marca} {modelo}")
+        print(f"Coche: {self.marca} {self.modelo}")
 
 mi_coche = Coche("Toyota", "Corolla")
 mi_coche.obtener_informacion()

@@ -1,19 +1,28 @@
 # Convierte de Programación estructurada a POO
 # Transforma este código en un conjunto de clases 
 # (Triangulo y Rectángulo) que tengan métodos para calcular su área.
+class Triangulo:
+    def __init__(self, base, altura):
+        self.base = base
+        self.altura = altura
 
-def calcular_area_triangulo(base, altura):
-    return (base * altura) / 2
+    def calcular_area(self):
+        return (self.base * self.altura) / 2
 
-def calcular_area_rectangulo(base, altura):
-    return base * altura
+class Rectangulo:
+    def __init__(self, base, altura):
+        self.base = base
+        self.altura = altura
 
-base_triangulo = 5
-altura_triangulo = 8
-area_triangulo = calcular_area_triangulo(base_triangulo, altura_triangulo)
+    def calcular_area(self):
+        return self.base * self.altura
+
+# Crear isntancias de Triangulo y Rectangulo
+Triangulo = Triangulo(5, 8)
+area_triangulo = float(Triangulo.calcular_area ()) 
 print(f"Área del triángulo: {area_triangulo}")
 
-base_rectangulo = 6
-altura_rectangulo = 4
-area_rectangulo = calcular_area_rectangulo(base_rectangulo, altura_rectangulo)
-print(f"Área del rectángulo: {area_rectangulo}")
+Rectangulo = Rectangulo(6, 4)   
+area_rectangulo = float(Rectangulo.calcular_area())
+print(f"Área del rectángulo: {area_rectangulo}")        
+
