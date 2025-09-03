@@ -3,7 +3,7 @@ from sqlalchemy.orm import sessionmaker, declarative_base
 
 # 1. Configuración de la base de datos
 Base = declarative_base()
-engine = create_engine('mysql+mysqlconnector://root:tu_password@localhost/escuela')
+engine = create_engine('mysql+mysqlconnector://root:admin@localhost/escuela')
 
 # 2. Definición de la clase (mapeo a la tabla 'estudiantes')
 class Estudiante(Base):
@@ -24,9 +24,9 @@ Session = sessionmaker(bind=engine)
 session = Session()
 
 # 5. Insertar datos
-estudiante1 = Estudiante(id=1, nombre='Ana', edad=20, curso='Matemáticas')
-estudiante2 = Estudiante(id=2, nombre='Juan', edad=22, curso='Historia')
-estudiante3 = Estudiante(id=3, nombre='Maria', edad=21, curso='Física')
+estudiante1 = Estudiante(id=12, nombre='Francisco', edad=20, curso='Matemáticas')
+estudiante2 = Estudiante(id=22, nombre='Pedro', edad=25, curso='Historia')
+estudiante3 = Estudiante(id=32, nombre='Maria Ines', edad=21, curso='Física')
 session.add_all([estudiante1, estudiante2, estudiante3])
 session.commit()
 
@@ -36,12 +36,12 @@ for estudiante in session.query(Estudiante).all():
     print(estudiante)
 
 # 7. Actualizar y eliminar
-juan = session.query(Estudiante).filter_by(nombre='Juan').first()
-juan.curso = 'Literatura'
+pedro = session.query(Estudiante).filter_by(nombre='Pedro').first()
+pedro.curso = 'Literatura'
 session.commit()
 
-maria = session.query(Estudiante).filter_by(id=3).first()
-session.delete(maria)
+alumno = session.query(Estudiante).filter_by(id=12).first()
+session.delete(alumno)
 session.commit()
 
 # 8. Funciones agregadas

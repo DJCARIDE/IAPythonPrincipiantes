@@ -14,11 +14,16 @@ class EstudianteDAO:
     def _ejecutar_consulta(self, consulta, datos=None):
         """Método auxiliar para ejecutar consultas."""
         cursor = self.conn.cursor()
-        if datos:
-            cursor.execute(consulta, datos)
+         # Si 'datos' es una lista, asumimos que es para executemany
+        if isinstance(datos, list):
+            cursor.executemany(consulta, datos)
+            self.conn.commit()
+        # Si no, usamos execute (funciona para tuplas o None)
         else:
-            cursor.execute(consulta)
-        self.conn.commit()
+            cursor.execute(consulta, datos)
+            # Solo hacer commit si no es una consulta de selección
+            if not consulta.strip().upper().startswith("SELECT"):
+                self.conn.commit()
         return cursor
 
     def crear_tabla(self):
@@ -76,7 +81,7 @@ class EstudianteDAO:
 if __name__ == "__main__":
     dao = EstudianteDAO(host="localhost", 
                         user="root", 
-                        password="tu_password", 
+                        password="admin", 
                         database="escuela")
 
     dao.crear_tabla()
