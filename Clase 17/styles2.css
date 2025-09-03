@@ -1,0 +1,55 @@
+/* Estilos generales */
+.body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+}
+
+/* Estilo para el título principal */
+.main-title {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+/* Estilo para párrafos */
+.content-paragraph {
+    color: #34495e;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Estilo para imágenes */
+.content-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Estilo para enlaces */
+.nav-link {
+    display: inline-block;
+    color: #3498db;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #3498db;
+    color: white;
+    transform: translateY(-2px);
+}
