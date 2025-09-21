@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS clientes;
+CREATE TABLE clientes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nombre TEXT NOT NULL,
+    email TEXT NOT NULL,
+    telefono TEXT NOT NULL
+);

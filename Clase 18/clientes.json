@@ -1,0 +1,214 @@
+{
+    "clientes": [
+        {
+            "id": 1,
+            "nombre": "Juan Pérez",
+            "email": "juan@email.com",
+            "telefono": "555-0001"
+        },
+        {
+            "id": 2,
+            "nombre": "María García",
+            "email": "maria@email.com",
+            "telefono": "555-0002"
+        },
+        {
+            "id": 3,
+            "nombre": "Carlos López",
+            "email": "carlos@email.com",
+            "telefono": "555-0003"
+        },
+        {
+            "id": 4,
+            "nombre": "Ana Martínez",
+            "email": "ana@email.com",
+            "telefono": "555-0004"
+        },
+        {
+            "id": 5,
+            "nombre": "Pedro Sánchez",
+            "email": "pedro@email.com",
+            "telefono": "555-0005"
+        },
+        {
+            "id": 6,
+            "nombre": "Laura Rodríguez",
+            "email": "laura@email.com",
+            "telefono": "555-0006"
+        },
+        {
+            "id": 7,
+            "nombre": "Miguel Fernández",
+            "email": "miguel@email.com",
+            "telefono": "555-0007"
+        },
+        {
+            "id": 8,
+            "nombre": "Sofía Torres",
+            "email": "sofia@email.com",
+            "telefono": "555-0008"
+        },
+        {
+            "id": 9,
+            "nombre": "Diego Ramírez",
+            "email": "diego@email.com",
+            "telefono": "555-0009"
+        },
+        {
+            "id": 10,
+            "nombre": "Carmen Morales",
+            "email": "carmen@email.com",
+            "telefono": "555-0010"
+        },
+        {
+            "id": 11,
+            "nombre": "Javier Ruiz",
+            "email": "javier@email.com",
+            "telefono": "555-0011"
+        },
+        {
+            "id": 12,
+            "nombre": "Isabel Jiménez",
+            "email": "isabel@email.com",
+            "telefono": "555-0012"
+        },
+        {
+            "id": 13,
+            "nombre": "Roberto Díaz",
+            "email": "roberto@email.com",
+            "telefono": "555-0013"
+        },
+        {
+            "id": 14,
+            "nombre": "Patricia Herrera",
+            "email": "patricia@email.com",
+            "telefono": "555-0014"
+        },
+        {
+            "id": 15,
+            "nombre": "Fernando Castro",
+            "email": "fernando@email.com",
+            "telefono": "555-0015"
+        },
+        {
+            "id": 16,
+            "nombre": "Lucía Ortega",
+            "email": "lucia@email.com",
+            "telefono": "555-0016"
+        },
+        {
+            "id": 17,
+            "nombre": "Andrés Medina",
+            "email": "andres@email.com",
+            "telefono": "555-0017"
+        },
+        {
+            "id": 18,
+            "nombre": "Elena Vargas",
+            "email": "elena@email.com",
+            "telefono": "555-0018"
+        },
+        {
+            "id": 19,
+            "nombre": "Ricardo Ramos",
+            "email": "ricardo@email.com",
+            "telefono": "555-0019"
+        },
+        {
+            "id": 20,
+            "nombre": "Beatriz Silva",
+            "email": "beatriz@email.com",
+            "telefono": "555-0020"
+        },
+        {
+            "id": 21,
+            "nombre": "Gabriel Romero",
+            "email": "gabriel@email.com",
+            "telefono": "555-0021"
+        },
+        {
+            "id": 22,
+            "nombre": "Victoria Flores",
+            "email": "victoria@email.com",
+            "telefono": "555-0022"
+        },
+        {
+            "id": 23,
+            "nombre": "Héctor Navarro",
+            "email": "hector@email.com",
+            "telefono": "555-0023"
+        },
+        {
+            "id": 24,
+            "nombre": "Raquel Molina",
+            "email": "raquel@email.com",
+            "telefono": "555-0024"
+        },
+        {
+            "id": 25,
+            "nombre": "Alberto Cruz",
+            "email": "alberto@email.com",
+            "telefono": "555-0025"
+        },
+        {
+            "id": 26,
+            "nombre": "Marina Delgado",
+            "email": "marina@email.com",
+            "telefono": "555-0026"
+        },
+        {
+            "id": 27,
+            "nombre": "Óscar Moreno",
+            "email": "oscar@email.com",
+            "telefono": "555-0027"
+        },
+        {
+            "id": 28,
+            "nombre": "Natalia Suárez",
+            "email": "natalia@email.com",
+            "telefono": "555-0028"
+        },
+        {
+            "id": 29,
+            "nombre": "Pablo Reyes",
+            "email": "pablo@email.com",
+            "telefono": "555-0029"
+        },
+        {
+            "id": 30,
+            "nombre": "Cristina Vega",
+            "email": "cristina@email.com",
+            "telefono": "555-0030"
+        },
+        {
+            "id": 31,
+            "nombre": "Adrián Mendoza",
+            "email": "adrian@email.com",
+            "telefono": "555-0031"
+        },
+        {
+            "id": 32,
+            "nombre": "Silvia Campos",
+            "email": "silvia@email.com",
+            "telefono": "555-0032"
+        },
+        {
+            "id": 33,
+            "nombre": "Martín Guerra",
+            "email": "martin@email.com",
+            "telefono": "555-0033"
+        },
+        {
+            "id": 34,
+            "nombre": "Diana Cortés",
+            "email": "diana@email.com",
+            "telefono": "555-0034"
+        },
+        {
+            "id": 35,
+            "nombre": "Tomás Guerrero",
+            "email": "tomas@email.com",
+            "telefono": "555-0035"
+        }
+    ]
+}
