@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Inicio</title>
+</head>
+<body>
+    <h1>{{ titulo_de_pagina }}</h1>
+    
+    <p>Bienvenido, {{ nombre_usuario }}.</p>
+
+    <h2>Lista de Tareas:</h2>
+    <ul>
+        {% for tarea in tareas %}
+            <li>{{ tarea }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
