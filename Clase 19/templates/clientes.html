@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador de Clientes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-4">
+        <h2 class="mb-4">Visualizador de Clientes</h2>
+        
+        <div class="mb-3">
+            <button id="btnCargar" class="btn btn-primary">Cargar</button>
+            <button id="btnLimpiar" class="btn btn-secondary">Limpiar</button>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Teléfono</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaClientes">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Modal para mostrar detalles -->
+    <div class="modal fade" id="clienteModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Información del Cliente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="modalContent">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const btnCargar = document.getElementById('btnCargar');
+            const btnLimpiar = document.getElementById('btnLimpiar');
+            const tablaClientes = document.getElementById('tablaClientes');
+            const clienteModal = new bootstrap.Modal(document.getElementById('clienteModal'));
+            const modalContent = document.getElementById('modalContent');
+
+            btnCargar.addEventListener('click', cargarDatos);
+            btnLimpiar.addEventListener('click', limpiarTabla);
+
+            function cargarDatos() {
+                fetch('/api/clientes')
+                    .then(response => response.json())
+                    .then(data => {
+                        limpiarTabla();
+                        data.clientes.forEach(cliente => {
+                            const row = document.createElement('tr');
+                            row.innerHTML = `
+                                <td>${cliente.id}</td>
+                                <td>${cliente.nombre}</td>
+                                <td>${cliente.email}</td>
+                                <td>${cliente.telefono}</td>
+                            `;
+                            row.addEventListener('click', () => mostrarDetalles(cliente));
+                            tablaClientes.appendChild(row);
+                        });
+                    })
+                    .catch(error => console.error('Error:', error));
+            }
+
+            function limpiarTabla() {
+                tablaClientes.innerHTML = '';
+            }
+
+            function mostrarDetalles(cliente) {
+                modalContent.innerHTML = `
+                    <p><strong>ID:</strong> ${cliente.id}</p>
+                    <p><strong>Nombre:</strong> ${cliente.nombre}</p>
+                    <p><strong>Email:</strong> ${cliente.email}</p>
+                    <p><strong>Teléfono:</strong> ${cliente.telefono}</p>
+                `;
+                clienteModal.show();
+            }
+        });
+    </script>
+</body>
+</html>
