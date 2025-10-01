@@ -6,6 +6,6 @@ def mostrar_info_usuario(**kwargs):
         print(f"- {clave.capitalize()}: {valor}")
 
 # Probemos la función
-mostrar_info_usuario(nombre="Ana", edad=30, ciudad="Buenos Aires")
+mostrar_info_usuario(nombre="Ana", edad=30, )
 print("-" * 20)
 mostrar_info_usuario(usuario="juan_perez", email="juan@example.com", activo=True)

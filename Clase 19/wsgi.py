@@ -9,5 +9,5 @@ spec = importlib.util.spec_from_file_location("clientes_app", MODULE_PATH)
 module = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(module)
 
-# Exponer el objeto WSGI para Gunicorn
+# Exponer el objeto WSGI para Gunicorn - solo funciona en Linux  ver el readme en Github
 app = module.app
