@@ -1,0 +1,50 @@
+# Archivo de variables de entorno (contiene API keys sensibles)
+.env
+
+# Base de datos vectorial ChromaDB
+db_chroma/
+*.db
+
+# Gradio (caché y archivos temporales)
+.gradio/
+gradio_cached_examples/
+
+# Archivos de Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Entornos virtuales
+venv/
+env/
+ENV/
+nombre_entorno/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Archivos de distribución
+build/
+dist/
+*.egg-info/

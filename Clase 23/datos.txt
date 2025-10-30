@@ -1,0 +1,16 @@
+Documentación
+LangChain es la plataforma para la ingeniería de agentes. Los equipos de IA de Replit, Clay, Rippling, Cloudflare, Workday y otras empresas confían en los productos de LangChain para diseñar agentes confiables.
+Nuestros marcos de código abierto le ayudan a crear agentes:
+LangChain le ayuda a comenzar rápidamente a crear agentes, con cualquier proveedor de modelos de su elección.
+LangGraph le permite controlar cada paso de su agente personalizado con orquestación de bajo nivel, memoria y soporte humano en el circuito. Puede gestionar tareas de larga duración con una ejecución duradera.
+LangSmith es una plataforma que ayuda a los equipos de IA a utilizar datos de producción en vivo para realizar pruebas y mejoras continuas. LangSmith ofrece:
+Observabilidad para ver exactamente cómo piensa y actúa su agente con seguimiento detallado y métricas de tendencias agregadas.
+Evaluación para probar y calificar el comportamiento del agente en datos de producción y conjuntos de datos fuera de línea para la mejora continua.
+Implementación para enviar su agente con un solo clic, utilizando una infraestructura escalable diseñada para tareas de larga duración.
+
+
+LangChain es la forma más sencilla de empezar a crear agentes y aplicaciones con LLM. Con menos de 10 líneas de código, puedes conectarte a OpenAI, Anthropic, Google y más . LangChain ofrece una arquitectura de agentes prediseñada e integraciones de modelos para ayudarte a empezar a incorporar LLM a tus agentes y aplicaciones de forma rápida y sencilla.
+Le recomendamos usar LangChain si desea crear agentes y aplicaciones autónomas rápidamente. Utilice LangGraph , nuestro entorno de ejecución y marco de orquestación de agentes de bajo nivel, cuando tenga necesidades más avanzadas que requieran una combinación de flujos de trabajo deterministas y agentísticos, alta personalización y una latencia cuidadosamente controlada.
+Los agentes de LangChain se basan en LangGraph para ofrecer ejecución duradera, streaming, intervención humana, persistencia y más. No es necesario conocer LangGraph para el uso básico de los agentes de LangChain.
+
+
